@@ -22,13 +22,13 @@ This is an overview of the changes I made to the original repository.
   - I removed the scrolling effect and called `strip.NoAudio()` to set the desired color when there is no input to the pixels.
 
 # What I learned
--This is the first time I have made changes to an existing repository to fit my needs.
+This is the first time I have made changes to an existing repository to fit my needs.
 
--I learned how to SSH into a Raspberry Pi to make changes to the code already on the device because it is in an area that can't be used.
+I learned how to SSH into a Raspberry Pi to make changes to the code already on the device because it is in an area that can't be used.
 
--I learned how to fork an exisiting repository and post my chnages on GitHub.
+I learned how to fork an exisiting repository and post my chnages on GitHub.
 
--I displayed that I can read someone's existing code and how it works to be able to make the chnages I wanted to make.
+I displayed that I can read someone's existing code and how it works to be able to make the chnages I wanted to make.
 
 # Overview
 The repository includes everything needed to build an LED strip music visualizer (excluding hardware):
