@@ -108,6 +108,12 @@ def _update_pi():
     _prev_pixels = np.copy(p)
     strip.show()
 
+# Function I added to keep colors consistent color if no input
+def NoAudio():
+    for i in range(config.N_PIXELS)
+        strip.setPixelColorRGB(i, r, g, b, white = 0)
+    strip.show()
+
 def _update_blinkstick():
     """Writes new LED values to the Blinkstick.
         This function updates the LED strip with new values.
