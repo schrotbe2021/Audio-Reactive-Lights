@@ -3,22 +3,22 @@ In my living room at my house I installed audio reactive LED lights to visualize
 
 # Changes to original repository
 ## Inspiration
-The original code written by ([Scott Lawson](https://github.com/scottlawsonbc)) only visualized the audio input and when there wasn't audio input the LED's would scroll and change colors. My living room did not have an overhead light so I wanted the lights to be used as the lights for the room as well as an audio visualizer. The idea was to edit the code to when there was no audio input, the lights would stay a consistent color and act as the lights for the room.
+The original code written by [Scott Lawson](https://github.com/scottlawsonbc) only visualized the audio input and when there wasn't audio input the LED's would scroll and change colors. My living room did not have an overhead light so I wanted the lights to be used as the lights for the room as well as an audio visualizer. The idea was to edit the code to when there was no audio input, the lights would stay a consistent color and act as the lights for the room.
 
 ## What I changed
 This is an overview of the changes I made to the original repository.
 
-- In ([config.py]config.py) there is a variable called `MIN_VOLUME_THRESHOLD = 1e-7`.
+- In [config.py](config.py) there is a variable called `MIN_VOLUME_THRESHOLD = 1e-7`.
   - I checked the average volume by printing the volume of the microphone input stream. I found that with no input the volume was around 0.3. There was a small amount of volume because of the bluetooth receiver I use and my speakers.
   - I changed `MIN_VOLUME_THRESHOLD = 0.3` so that when there is no music playing the pixels would be a consistent color.
-- The main script ([visualization.py]visualization.py) uses ([led.py]led.py) to set the color of each pixel.
-  - ([led.py](led.py)) uses a library ([https://github.com/jgarff/rpi_ws281x.git]rpi_ws281x) to communicate with the LED's.
-  - ([https://github.com/jgarff/rpi_ws281x.git]rpi_ws281x) has a function called `setPixelColor(n, red, green, blue)` to set the color of a pixel on the led strip.
+- The main script [visualization.py](visualization.py) uses ([led.py]led.py) to set the color of each pixel.
+  - [led.py](led.py) uses a library [rpi_ws821x](rpi_ws281x) to communicate with the LED's.
+  - [rpi_ws281x](rpi_ws281x) has a function called `setPixelColor(n, red, green, blue)` to set the color of a pixel on the led strip.
     - n = Position of LED
     - r, g, b = RGB value of the pixel
-  - I added a function called `NoAudio()` in ([led.py]led.py) that iterates through each pixel of the strip and sets the color to the desired color.
+  - I added a function called `NoAudio()` in [led.py](led.py) that iterates through each pixel of the strip and sets the color to the desired color.
   - Then call `strip.show()` to display the pixels.
-- The main script ([visualization.py](visualization.py)) visualizes the audio input (`microphone_update()`). If the volume was below the threshold it would scroll through colors.
+- The main script [visualization.py](visualization.py) visualizes the audio input (`microphone_update()`). If the volume was below the threshold it would scroll through colors.
   - I removed the scrolling effect and called `strip.NoAudio()` to set the desired color when there is no input to the pixels.
 
 # What I learned
