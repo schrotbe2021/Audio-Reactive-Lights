@@ -3,7 +3,7 @@ In my living room at my house I installed audio reactive LED lights to visualize
 
 # Changes to original repository
 ## Inspiration
-The original code written by ([https://github.com/scottlawsonbc](Scott Lawson) only visualized the audio input and when there wasn't audio input the LED's would scroll and change colors. My living room did not have an overhead light so I wanted the lights to be used as the lights for the room as well as an audio visualizer. The idea was to edit the code to when there was no audio input, the lights would stay a consistent color and act as the lights for the room.
+The original code written by ([https://github.com/scottlawsonbc](Scott Lawson)) only visualized the audio input and when there wasn't audio input the LED's would scroll and change colors. My living room did not have an overhead light so I wanted the lights to be used as the lights for the room as well as an audio visualizer. The idea was to edit the code to when there was no audio input, the lights would stay a consistent color and act as the lights for the room.
 
 ## What I changed
 This is an overview of the changes I made to the original repository.
