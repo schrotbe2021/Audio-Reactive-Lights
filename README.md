@@ -23,9 +23,12 @@ This is an overview of the changes I made to the original repository.
 
 # What I learned
 This is the first time I have made changes to an existing repository to fit my needs.\
+
 I learned how to SSH into a Raspberry Pi to make changes to the code already on the device because it is in an area that can't be used.\
+
 I learned how to fork an exisiting repository and post my chnages on GitHub.\
-I displayed that I can read someone's existing code and how it works to be able to make the chnages I wanted to make.\
+
+I displayed that I can read someone's existing code and how it works to be able to make the chnages I wanted to make.
 
 # Overview
 The repository includes everything needed to build an LED strip music visualizer (excluding hardware):
