@@ -110,6 +110,9 @@ def _update_pi():
 
 # Function I added to keep colors consistent color if no input
 def NoAudio():
+    r = 255
+    g = 255
+    b = 255
     for i in range(config.N_PIXELS)
         strip.setPixelColorRGB(i, r, g, b, white = 0)
     strip.show()
